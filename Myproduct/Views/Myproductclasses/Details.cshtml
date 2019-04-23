@@ -1,0 +1,58 @@
+﻿@model Myproduct.Models.Myproductclass
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Myproductclass</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.category)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.category)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Orderdate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Orderdate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productquality)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productquality)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productprise)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productprise)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
